@@ -1,0 +1,57 @@
+body {
+  position: relative;
+  margin: 1rem 4rem 0 4rem;
+}
+
+.google-link-searchs {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form-flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.query-hidden {
+  display: none;
+}
+
+.query {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.form-query-advanced {
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.query-advanced {
+  padding: 5px;
+  width: 17rem;
+}
+
+.buttons-query {
+  gap: 10px;
+}
+
+.button-query {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.button-query-advanced {
+  color: white;
+  background-color: blue;
+  width: fit-content;
+}

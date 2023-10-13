@@ -1,22 +1,41 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="static/index.css" />
+  </head>
 
-<head>
-  <title>Search</title>
-</head>
+  <body>
+    <nav class="google-link-searchs">
+      <a href="index.html">Normal search</a>
+      <a href="indexAdvanced.html">Advanced search</a>
+    </nav>
 
-<body>
-  <a href="index.html">Normal search</a>
-  <a href="indexAdvanced.html">Advanced search</a>
-  <h1>Search</h1>
-  <form action="https://google.com/search" method="GET">
-    <input type="text" placeholder="All these words" name="as_q" />
-    <input type="text" placeholder="This exact word or phrase" name="as_epq" />
-    <input type="text" placeholder="Any of these words" name="as_oq" />
-    <input type="text" placeholder="None of these words" name="as_eq" />
+    <h1>Advanced search</h1>
+    <form action="https://google.com/search" method="GET">
+      <div class="form-flex-container form-query-advanced">
+        <div class="input-control">
+          <label for="as_q">All these words:</label>
+          <input class="query-advanced" type="text" name="as_q" />
+        </div>
 
-    <input type="submit" value="Google Search" />
-  </form>
-</body>
+        <div class="input-control">
+          <label for="as_epq">This exact word or phrase:</label>
+          <input class="query-advanced" type="text" name="as_epq" />
+        </div>
 
+        <div class="input-control">
+          <label for="as_oq">Any of these words:</label>
+          <input class="query-advanced" type="text" name="as_oq" />
+        </div>
+
+        <div class="input-control">
+          <label for="as_eq">None of these words:</label>
+          <input class="query-advanced" type="text" name="as_eq" />
+        </div>
+
+        <input class="button-query-advanced" type="submit" value="Google Search" />
+      </div>
+    </form>
+  </body>
 </html>
