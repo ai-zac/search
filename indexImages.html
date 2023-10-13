@@ -6,14 +6,14 @@
 </head>
 
 <body>
-  <a href="indexImages.html">Search images</a>
+  <a href="index.html">Normal search</a>
   <a href="indexAdvanced.html">Advanced search</a>
-  <h1>Search</h1>
+  <h1>Search images</h1>
   <form action="https://google.com/search" method="GET">
-    <input type="text" name="q" />
+    <input type="text" name="tbm" value="isch" hidden/>
 
+    <input type="text" name="q" />
     <input type="submit" value="Google Search" />
-    <input type="submit" name="btnI" value="I’m Feeling Lucky" />
   </form>
 </body>
 
