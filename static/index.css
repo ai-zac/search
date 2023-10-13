@@ -1,3 +1,11 @@
+html, body, main {
+  height: 100%;
+}
+
+html {
+  font-family: arial, sans-serif;
+}
+
 body {
   position: relative;
   margin: 1rem 4rem 0 4rem;
@@ -9,36 +17,25 @@ body {
   top: 0;
 }
 
-.form-flex-container {
+main, .input-flex-container {
   display: flex;
   justify-content: center;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.input-flex-container {
   margin: 10px;
 }
 
-.query-hidden {
-  display: none;
-}
-
 .query {
+  width: 50vh;
   padding: 10px;
   border-radius: 20px;
-}
-
-.form-query-advanced {
-  flex-direction: column;
-  gap: 10px 0;
-}
-
-.input-control {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 30rem;
-}
-
-.query-advanced {
-  padding: 5px;
-  width: 17rem;
 }
 
 .buttons-query {
@@ -46,11 +43,37 @@ body {
 }
 
 .button-query {
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
 }
 
+.form-query-advanced {
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40rem;
+}
+
+.query-advanced {
+  padding: 5px;
+  width: 40vh;
+}
+
 .button-query-advanced {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40rem;
+}
+
+.button-query-advanced input {
+  padding: 10px;
+  border-radius: 5px;
   color: white;
   background-color: blue;
   width: fit-content;

@@ -11,30 +11,32 @@
       <a href="indexAdvanced.html">Advanced search</a>
     </nav>
 
-    <h1>Advanced search</h1>
+    <h1 style="color: red;">Advanced search</h1>
     <form action="https://google.com/search" method="GET">
-      <div class="form-flex-container form-query-advanced">
-        <div class="input-control">
+      <div class="input-flex-container form-query-advanced">
+        <div class="input-item">
           <label for="as_q">All these words:</label>
           <input class="query-advanced" type="text" name="as_q" />
         </div>
 
-        <div class="input-control">
+        <div class="input-item">
           <label for="as_epq">This exact word or phrase:</label>
           <input class="query-advanced" type="text" name="as_epq" />
         </div>
 
-        <div class="input-control">
+        <div class="input-item">
           <label for="as_oq">Any of these words:</label>
           <input class="query-advanced" type="text" name="as_oq" />
         </div>
 
-        <div class="input-control">
+        <div class="input-item">
           <label for="as_eq">None of these words:</label>
           <input class="query-advanced" type="text" name="as_eq" />
         </div>
 
-        <input class="button-query-advanced" type="submit" value="Advanced search" />
+        <div class="button-query-advanced">
+          <input type="submit" value="Advanced search" />
+        </div>
       </div>
     </form>
   </body>
