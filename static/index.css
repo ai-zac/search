@@ -25,7 +25,6 @@ main, .input-flex-container {
 main {
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 
 .input-flex-container {
